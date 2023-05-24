@@ -1,0 +1,26 @@
+.main-searchbar {
+  height: 80px;
+  border: 1px solid #515050;
+  border-radius: 10px;
+  display: flex;
+  column-gap: 1000px;
+  padding-left: 20px;
+  margin: 20px;
+  flex-direction: row;
+  align-items: center;
+}
+.searchbar-Left {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  align-items: center;
+}
+.searchbar-right {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  align-items: center;
+}
+.searchbar {
+  border-color: 1px solid #515050;
+}

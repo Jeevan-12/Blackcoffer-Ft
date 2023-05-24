@@ -1,0 +1,45 @@
+.sidebar-Top {
+  height: 100vh;
+  border-right: 1px solid #c1bdbd;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.sidebar-first {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  transition-duration: '0.9s';
+  margin: '0px';
+  position: relative;
+}
+.moving-button {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+.singlecard {
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+  align-items: center;
+}
+.nameitem {
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}

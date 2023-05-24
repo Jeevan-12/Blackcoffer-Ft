@@ -1,24 +1,22 @@
-import logo from './logo.svg';
+import { useContext, useState } from 'react';
 import './App.css';
+import HomePage from './Components/HomePage';
+
+import { blackColor } from './Components/UseContext';
 
 function App() {
+  const [color, setColor] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <blackColor.Provider value={{ color, setColor }}>
+      <div
+        style={{
+          backgroundColor: color ? '#101010' : '#f5f5f5',
+          color: color ? '#f5f5f5' : '#101010',
+        }}
+      >
+        <HomePage />
+      </div>
+    </blackColor.Provider>
   );
 }
 
