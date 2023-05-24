@@ -48,7 +48,7 @@ const Chart = () => {
 
   const getdata = async () => {
     const option = {
-      url: 'http://localhost:8000/getinsert',
+      url: 'https://black-coffer-bt.vercel.app/getinsert',
       headers: { 'content-type': 'application/json' },
       method: 'get',
     };
