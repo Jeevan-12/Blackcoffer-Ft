@@ -15,7 +15,7 @@ function Dashboard() {
   const [likelihood, setlikelihood] = useState();
   const getdata = async () => {
     let option = {
-      url: 'http://localhost:8000/get',
+      url: 'https://black-coffer-bt.vercel.app/get',
       headers: { 'content-type': 'application/json' },
       method: 'get',
     };
